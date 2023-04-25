@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body{
+    margin: 0;
+}
+    .child-class{
+        text-align: center;
+        /* border:2px solid red; */
+        padding: 32px;
+        font-family: cursive;
+        background-color: azure;
+        color:rgb(8, 92, 125);
+        box-shadow: aqua 2px , 2px , 2px , 2px ;
+    }
+    .parent-div{
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        color:white;
+
+    /* transform: translate(-50% ,50%) ; */
+
+    }
+
+    .btn{
+        padding: 10px 32px;
+        border-radius: 5px;
+        cursor: pointer;
+
+
+
+    }
+
+    .btn:hover{
+        background-color: brown;
+        color:white
+    }
+
+
+
+</style>
+
+</head>
+
+     <div id="myDiv"  class="parent-div" >
+         <div id="child-div" class="child-class">
+            <h1>Stone, Paper and Scissors Game</h1>
+            <h3>Choose stone, paper, or scissors:</h3>
+            <button class="btn" onclick="playerChoice('stone')">Stone</button>
+            <button class="btn" onclick="playerChoice('paper')">Paper</button>
+            <button class="btn" onclick="playerChoice('scissors')">Scissors</button>
+            <p id="result"></p>
+            <p id="score"></p>
+        </div>
+    </div>
+
+   <script src="./index.js"></script>
+</body>
+</html>
